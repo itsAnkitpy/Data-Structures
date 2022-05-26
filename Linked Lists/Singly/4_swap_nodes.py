@@ -91,5 +91,11 @@ if __name__ == "__main__":
     second.next = third
     third.next = four
 
+    #--------- SWAP OPERATIONS---------
+    # Swaps nodes with data 2 and 4
+    llist.swap_nodes(2,4)
+    # Swaps nodes with data 2 and 4
+    llist.swap_nodes(1,3)
+
     llist.printList()
 
