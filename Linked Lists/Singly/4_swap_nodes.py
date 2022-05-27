@@ -96,6 +96,7 @@ if __name__ == "__main__":
     llist.swap_nodes(2,4)
     # Swaps nodes with data 2 and 4
     llist.swap_nodes(1,3)
-
+    
+    # Prints the list after above operations
     llist.printList()
 
