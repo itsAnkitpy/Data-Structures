@@ -11,8 +11,8 @@
 #                 Factors of 12: 1, 2, 3, 4, 6, 12
 #                 Common Factors: 1, 3 out of which 3 is the greatest hence it is the GCD.
 
-N1 = 20
-N2 = 15
+N1 = 9
+N2 = 12
 
 # Solution 1
 
@@ -33,17 +33,36 @@ N2 = 15
 
 # Solution 2
 
-for i in range(min(N1,N2), 0, -1):
-    if N1%i == 0 and N2%i == 0:
-        print(i)
-        break # Stops after finding the first common divisor
+# for i in range(min(N1,N2), 0, -1):
+#     if N1%i == 0 and N2%i == 0:
+#         print(i)
+#         break # Stops after finding the first common divisor
     
 # Time Complexity: O(min(N1, N2))
 # Space Complexity: O(1)
 
 #------------------------------------------------------------------------------------------------------------------------------
 
-# Solution 3
+# Solution 3 - Euclidean Algorithm
+    # Repeatedly subtract the smaller number from the larger number until one of them becomes 0.
+    # Once one of them becomes 0, the other number is the GCD of the original numbers.
+
+# while N1 > 0 and N2 > 0:
+#     if N1 > N2:
+#         N1 = N1 % N2
+#     else:
+#         N2 = N2 % N1
+
+# if N1 == 0:
+#     print(N2)
+# else:
+#     print(N1)
+
+# Time Complexity: O(min(N1, N2)) where N1 and N2 is the input number. The algorithm iterates from the minimum of N1 and N2 
+# to 1 and each iteration checks whether both the numbers are divisible by the current number (constant time operations).
+
+# Space Complexity: O(1) as the space complexity remains constant and independent of the input size. Only a fixed amount of 
+# memory is required to store the integer variable
 
 
 
