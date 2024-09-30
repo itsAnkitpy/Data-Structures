@@ -42,3 +42,9 @@ def merge_sort(arr):
 # Example usage
 arr = [9, 4, 7, 6, 3, 1, 5]
 print("Original array:", arr)
+
+# Call merge_sort to sort the array
+merge_sort(arr)
+
+# Print the sorted array
+print("Sorted array:", arr)
